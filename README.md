@@ -20,7 +20,7 @@ Users will open the website and be able choose either receive a message from a s
 ## Views
 - Index (front/landing page) 
 - Users (login/sign up) 
-– chat room(room page)
+- chat room(room page)
 
 ## Controllers/Routes
 - Index (front/landing page)
