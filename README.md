@@ -8,37 +8,39 @@ Users will open the website and be able choose either receive a message from a s
 
 # Technical
 
-Node js, for the back-end, Css front-end. Express generator
+- Node js for the back-end 
+- Css front-end
+- Express generator
 
 ## Models
--conversation 
-–index page 
-–user 
+- conversation 
+– index page 
+– user 
 
 ## Views
--Index (front/landing page) 
--Users (login/sign up) 
-–chat room(room page)
+- Index (front/landing page) 
+- Users (login/sign up) 
+– chat room(room page)
 
 ## Controllers/Routes
--Index (front/landing page)
--Users (login/sign up) 
--Rooms (discussion topics
+- Index (front/landing page)
+- Users (login/sign up) 
+- Rooms (discussion topics
 
 ## Other
 
 # Milestones
 
 ## First week
--get things brainstorm, come up with the functions and css
--  able to send and receive messages
+- get things brainstorm, come up with the functions and css
+- able to send and receive messages
 - able to see user data
 
 ## Second Week
--basically have a basic framework done, all the functions is working
+- basically have a basic framework done, all the functions is working
 - start animations and proper landing page
 - Try socket.io
 
 ## Third Week
--wrap it up, adding more features and function if is possible
+- wrap it up, adding more features and function if is possible
 - Clean up landing and animations
