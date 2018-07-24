@@ -14,8 +14,8 @@ Users will open the website and be able choose either receive a message from a s
 
 ## Models
 - conversation 
-– index page 
-– user 
+- index page 
+- user 
 
 ## Views
 - Index (front/landing page) 
