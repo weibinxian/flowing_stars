@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
 const auth = require('./helpers/auth')
+const Star = require('../models/star');
 
 //Users index
 router.get('/', auth.requireLogin, (req, res, next) => {
@@ -25,8 +26,15 @@ router.post('/', (req, res, next) => {
 
   user.save(function(err, user) {
     if(err) console.log(err);
-    return res.redirect('/users');
+    return res.redirect('/');
   });
 })
+//user profile
+router.get('/profile', auth.requireLogin, (req, res, next) => {
+
+    Star.find({username: res.locals.currentUserName}, (err, stars) => {
+    res.render('users/show', { stars});
+    })
+  })
 
 module.exports = router;

@@ -1,0 +1,42 @@
+<div class="background_one">
+  <div >
+	<div id="rainbow" class="rainbow hideme">
+		<div class="red"></div>
+		{{!-- <div id ="star_light" class="orange"></div> --}}
+		<div  class="yellow"></div>
+		<div class="green"></div>
+		<div class="cyan"></div>
+		<div class="blue"></div>
+		<div class="purple"></div>
+	</div>
+</div>
+<div id ="square"class="square_new">
+  
+  <form id="form"class ="form_op" action="/stars" method="post">
+    <legend>New Star</legend>
+
+    <P>Hi There:you are here to share your thoughts! you can said anything here, enter anything you want to share in below 
+      and be ready feels others words </P>
+      <div class="form-group">
+      <label for="star-title">Star's name</label>
+      <input type="text" name="starname" class="form-control" id="star-starname" placeholder="Name">
+    </div>
+
+    
+        <label for="star-word">I'm Listening:</label>
+    <div class="form-group">
+      {{!-- <label for="star-word">I'm Listening:</label> --}}
+      <textarea class="size"type="text" name="word" class="form-control" id="star-word"></textarea>
+    </div>
+
+    <div class="text-right animation">
+      <button style="background-color: #555555;"type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </form>
+
+</div >
+<div class="font-style">
+<button id="stop_refresh" >Animation</button>
+</div>
+
+</div>

@@ -3,9 +3,10 @@ const router = express.Router();
 const User = require('../models/user');
 
 // set layout variables
-router.use(function(req, res, next) {
-  res.locals.title = "MakeReddit";
+router.use((req, res, next) =>{
+  res.locals.title = "Flowing Star";
   res.locals.currentUserId = req.session.userId;
+  res.locals.currentUserName = req.session.username;
 
   next();
 });
@@ -17,6 +18,7 @@ router.get('/', (req, res, next) => {
 
 // login
 router.get('/login', (req, res, next) => {
+  
   res.render('login');
 });
 
@@ -30,8 +32,8 @@ router.post('/login', (req, res, next) => {
       return next(next_error);
     } else {
       req.session.userId = user._id;
-
-      return res.redirect('/') ;
+      req.session.username = req.body.username;
+      return res.redirect('/stars/new') ;
     }
   });
 });

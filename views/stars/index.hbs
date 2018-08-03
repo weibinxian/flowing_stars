@@ -1,0 +1,15 @@
+<div class="background_star_index">
+<div style="font-size:200px"class="text-center word">
+    Galaxy
+</div>
+
+<div style="font-size:20px"class="text-center">
+  <ul>
+    {{#each stars as |star|}}
+      <li>
+        <a href="/stars/{{star.id}}">{{star.starname}}</a>
+      </li>
+    {{/each}}
+  </ul>
+<div>
+</div>
