@@ -537,3 +537,16 @@ a:hover{
 .font_style{
   text-align: center;
 }
+
+/*____________________________________*/
+
+
+/* display the screen so it could make it fully display*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only 
+screen and (min-device-pixel-ratio : 1.5) { 
+
+  .background_one{
+    padding-bottom: 200px;
+
+  }
+ }
