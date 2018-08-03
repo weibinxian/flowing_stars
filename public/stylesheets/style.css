@@ -154,8 +154,8 @@ animation: rainbows 1.5s infinite linear;animation-delay:1.85s;}
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0 550px;
-  height: 100%;
+  padding: 100px 0 560px;
+  /* height: 100%; */
 }
 .background_one{
   /* background-image: url("http://g.search3.alicdn.com/img/bao/uploaded/i4/i2/511443/TB1yhxEcbYI8KJjy0FaXXbAiVXa_!!0-item_pic.jpg"); */
@@ -165,7 +165,6 @@ animation: rainbows 1.5s infinite linear;animation-delay:1.85s;}
   background-repeat: no-repeat;
   padding: 100px 0 100px;
  
-
 }
 
 .background_star_index{
@@ -547,6 +546,8 @@ screen and (min-device-pixel-ratio : 1.5) {
 
   .background_one{
     padding-bottom: 200px;
-
+  }
+  .backgground{
+    padding-bottom: 800px;
   }
  }
