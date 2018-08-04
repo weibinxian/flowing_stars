@@ -63,7 +63,7 @@ router.post('/', auth.requireLogin, (req, res, next)=>{
     if(err) { console.error(err) };
     // return res.redirect(`/stars?id=${star._id}`);
     
-    return res.redirect('/');
+    return res.redirect('/stars');
     
   });
 });

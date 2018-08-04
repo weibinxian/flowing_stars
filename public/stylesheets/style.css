@@ -96,41 +96,41 @@ body{
 
 
 /* body{padding:0;margin:0;background:url(http://b.zol-img.com.cn/desk/bizhi/image/1/1920x1080/1348561926227.jpg);} */
-.rainbow div{width:4px;height:4px; border-radius:4px;opacity:0;}
-.red{background:#FF3030;position: relative;top:130px;left:300px; 
+.rainbow div{width:10px;height:10px; border-radius:10px;opacity:0;}
+.red{background:#FFE4B5;position: relative;top:130px;left:300px; 
 
-animation:rainbows 1.15s infinite linear;animation-delay:0.15s;
+animation:rainbows 2s infinite linear;animation-delay:0.15s;
  }
  /*元神大大关于animation动画的课： http://www.gbtags.com/gb/gbtutorials/335.htm */
  .red:after{width:200px;height:200px; content:"";
- border-left: 1px solid #FF3030; display: block; 
+ border-left: 2px solid #F0E68C; display: block; 
  transform:rotate(45deg); 
- position: relative; top:-98px;left:42px;}
+ position: relative; top:-94px;left:42px;}
  
  /* Leon大大关于旋转变形的课 http://www.gbtags.com/gb/gbtutorials/221.htm */
  
- .orange{background:#CD6600;position: relative;top:230px;left:400px; animation:rainbows 1.45s infinite linear;animation-delay:0.35s;}
-.orange:after{width:200px;height:200px; content:"";border-left: 1px solid #CD6600; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+ .orange{background:#FFE4B5 ;position:relative;top:230px;left:400px; animation:rainbows 1.45s infinite linear;animation-delay:0.35s;}
+.orange:after{width:200px;height:200px; content:"";border-left: 2px solid #F0E68C; display: block; transform:rotate(45deg); position: relative; top:-94px;left:42px;}
 
-.yellow{background:#FFD700;position: relative;top:200px;left:600px; 
+.yellow{background:#FFE4B5;position: relative;top:200px;left:600px; 
 animation: rainbows 1200ms infinite linear;animation-delay:0.55s;}
-.yellow:after{width:200px;height:200px; content:"";border-left: 1px solid #FFD700; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+.yellow:after{width:200px;height:200px; content:"";border-left: 2px solid #F0E68C; display: block; transform:rotate(45deg); position: relative; top:-94px;left:42px;}
 
-.green{background:#7FFF00;position: relative;top:135px;left:800px; 
-animation: rainbows 1.5s infinite linear;animation-delay:0.75s;}
-.green:after{width:200px;height:200px; content:"";border-left: 1px solid #7FFF00; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+.green{background:#FFE4B5;position: relative;top:135px;left:800px; 
+animation: rainbows 3s infinite linear;animation-delay:0.75s;}
+.green:after{width:200px;height:200px; content:"";border-left: 2px solid #F0E68C; display: block; transform:rotate(45deg); position: relative; top:-94px;left:42px;}
 
-.cyan{background:#6CA6CD;position: relative;top:130px;left:960px; 
-animation: rainbows 1.25s infinite linear;animation-delay:0.95s;}
-.cyan:after{width:200px;height:200px; content:"";border-left: 1px solid #6CA6CD; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+.cyan{background:#FFE4B5;position: relative;top:130px;left:960px; 
+animation: rainbows 3s infinite linear;animation-delay:0.95s;}
+.cyan:after{width:200px;height:200px; content:"";border-left: 2px solid #F0E68C; display: block; transform:rotate(45deg); position: relative; top:-94px;left:42px;}
 
-.blue{background:#4169E1;position: relative;top:140px;left:1100px; 
+.blue{background:#FFE4B5;position: relative;top:140px;left:1100px; 
 animation: rainbows 0.75s infinite linear;animation-delay:1.15s;}
-.blue:after{width:200px;height:200px; content:"";border-left: 1px solid #4169E1; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+.blue:after{width:200px;height:200px; content:"";border-left: 2px solid #F0E68C; display: block; transform:rotate(45deg); position: relative; top:-94px;left:42px;}
 
-.purple{background:#9932CC;position: relative;top:130px;left:1200px; 
-animation: rainbows 1.5s infinite linear;animation-delay:1.85s;}
-.purple:after{width:200px;height:200px; content:"";border-left: 1px solid #9932CC; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+.purple{background:#FFE4B5;position: relative;top:130px;left:1200px; 
+animation: rainbows 2s infinite linear;animation-delay:1.85s;}
+.purple:after{width:200px;height:200px; content:"";border-left: 2px solid #F0E68C; display: block; transform:rotate(45deg); position: relative; top:-94px;left:42px;}
 @keyframes rainbows{
 0%{opacity: 0;transform:scale(0) translate(0,0);}
 50%{opacity:1;transform:scale(1)  translate(-200px,200px);}
@@ -165,6 +165,13 @@ animation: rainbows 1.5s infinite linear;animation-delay:1.85s;}
   background-repeat: no-repeat;
   padding: 100px 0 100px;
  
+}
+.background_two{
+  background-image: url("/images/demo2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 10px 0 10px;
 }
 
 .background_star_index{
@@ -452,10 +459,10 @@ h2{font:1.2em/60px '微软雅黑',serif;font-weight:400;letter-spacing:0.2em;
   display: inline-block;
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 1px;
-  max-width: 200px;
+  max-width: auto;
   padding: 4px 8px;
   border-radius: 2px;
-  background-color: rgba(37, 77, 253, 0.945);
+  background-color: rgba(238, 239, 241, 0.945);
   line-height: 20px;
   font-size: 14px;
 }
@@ -467,7 +474,7 @@ h2{font:1.2em/60px '微软雅黑',serif;font-weight:400;letter-spacing:0.2em;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-left: 12px solid transparent;
-  border-right: 12px solid rgb(0, 77, 128);
+  border-right: 12px solid lightgray;
 } 
 .button {
   background-color: #008CBA; /* Green */
@@ -535,6 +542,8 @@ a:hover{
 }
 .font_style{
   text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 /*____________________________________*/
@@ -551,3 +560,23 @@ screen and (min-device-pixel-ratio : 1.5) {
     padding-bottom: 800px;
   }
  }
+ 
+.format{
+  padding: 0 0 0;
+  margin: 0 0 0;
+  border: solid 2px black;
+  border-radius: 10px;
+}
+.ul_no{
+  list-style-type: none;
+}
+.index_style{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+}
+.index_button{
+  font-weight:400;letter-spacing:0.3em;
+  text-shadow:0 0 25px rgba(254,254,255,0.85);
+  font-family: 'Times New Roman', Times, serif;
+}
