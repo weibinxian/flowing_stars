@@ -154,7 +154,7 @@ animation: rainbows 2s infinite linear;animation-delay:1.85s;}
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0 560px;
+  padding: 100px 0 660px;
   /* height: 100%; */
 }
 .background_one{
@@ -163,7 +163,7 @@ animation: rainbows 2s infinite linear;animation-delay:1.85s;}
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 100px 0 100px;
+
  
 }
 .background_two{
@@ -556,8 +556,8 @@ screen and (min-device-pixel-ratio : 1.5) {
   .background_one{
     padding-bottom: 200px;
   }
-  .backgground{
-    padding-bottom: 800px;
+  .background{
+    padding-bottom: 1200px;
   }
  }
  
