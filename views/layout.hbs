@@ -16,22 +16,7 @@
   </head>
 
   <body>
-    
-    {{!-- <nav class="navbar navbar-dark bg-dark">
-  <div class="navbar-brand">
-    Flowing Star
-  </div>
-  <div class="navbar-text">
-     <a class="nav-link" href="/stars/new">New Star</a>
-     <a class="nav-link" href="/stars">Get A Star</a>
-  </div>
-   {{#if currentUserId}}
-           <a href="/logout">Log Out</a>
-      {{else}}
-            <a href="/login">Sign in</a>
-     {{/if}}
-
-</nav> --}}
+  
 <nav class="nav">
   <input type="checkbox" class="nav__cb" id="menu-cb"/>
   <div class="nav__content">
@@ -44,34 +29,37 @@
       </li> --}}
 
 <li class="nav__item">
-        <span class="nav__item-text">
+        <span  style="padding-right: 20px" class="nav__item-text">
           <a class="font-style" href="/users/profile">MyStars</a>
       </span>
       </li>
 
+
+      <li class="nav__item">
+         <span class="nav__item-text" style="padding-left: 15px;">
+          {{#if currentUserId}}
+           <a class="font-style" href="/logout">LogOut</a> 
+           </span>
+           {{else}}
+           <span class="nav__item-text" style="padding-left:10px;">
+            <a  class="font-style"href="/login">LogIn</a>
+           {{/if}}
+        </span>
+      </li>
+
 <li class="nav__item">
-        <span class="nav__item-text">
-          <a class="font-style" style="padding-left: 10px" href="/stars">Reply</a>
+        <span class="nav__item-text" style="padding-left:25px">
+          <a class="font-style"  href="/stars">Reply</a>
       </span>
       </li>
        
 
-      <li class="nav__item">
-         <span class="nav__item-text">
-          {{#if currentUserId}}
-           <a class="font-style" style="padding-left: 10px;
-    padding-right: 10px;"  href="/logout">LogOut</a>
-           {{else}}
-            <a  class="font-style" href="/login">SignIn</a>
-           {{/if}}
-        </span>
-      </li>
     
 
       
 
       <li class="nav__item">
-        <span class="nav__item-text" style="padding-left: 20px">
+        <span class="nav__item-text"  style="padding-left: 15px">
           {{!-- <div> --}}
           {{!-- <a  id="stop_refresh" class="font-style" href="/stars/new">NewStar</a> --}}
           <a   class="font-style" href="/stars/new">NewStar</a>
