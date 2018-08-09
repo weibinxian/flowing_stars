@@ -1,15 +1,10 @@
-<div >
-<h2 class="font_style">{{currentUserName }}'s star</h2>
-
-<div >
+<div class="background_profile">
+<h1 class="font_style text">{{currentUserName }}'s star</h1>
+<div "index_style">
     <ul class="ul_no">
 {{#each stars as |star|}}
 {{!-- <div>{{star.id}}</div> --}}
-<div class="index_style">
-  
-    
-<li ></h3>{{star.starname}}:<a href="/stars/{{star.id}}"> click me</a></h3></li>
-</div>
+<li ><a href="/stars/{{star.id}}"><h2 class="text_small">{{star.starname}}</h2></a></li>
 {{/each}}
 </ul>
 </div>

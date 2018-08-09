@@ -1,6 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+require('dotenv').config();
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //stars
@@ -46,8 +47,7 @@ app.use(function(err, req, res, next) {
 
 // Database setup
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb://msuser:makeschool123@ds147011.mlab.com:47011/flowingstars';
-
+const mongoURI = process.env.MONGOURI;
 mongoose.connect(mongoURI)
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;

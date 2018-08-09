@@ -1,15 +1,25 @@
 
 <div class="background">
-<form  id="login_frame"action="/login" method="post">
+
+<form  id="login_frame_one"action="/login" method="post">
 <i style="padding-bottom:10px"class="fas fa-star-half-alt fa-2x ">Log in</i>
-  <div class="form-group">
+  <div class="form-group" style="padding-left:8px;">
     <label for="user-username">Username</label>
-    <input type="text" name="username" class="form-control" id="user-username" placeholder="username">
+    <input style="width:360px"type="text" name="username" class="form-control" id="user-username" placeholder="username">
   </div>
 
-  <div class="form-group">
-    <label for="user-password">Password</label>
-    <input type="password" name="password" class="form-control" id="user-password" placeholder="password">
+  <div class="form-group" >
+
+<label for="user-password">Password </label>
+<div>
+
+ <input  style="display:inline-block; width: 320px" type="password" name="password" class="form-control" id="pwd" class="masked" placeholder="password" >
+  <button style="display:inline-block;"type="button" id="eye">
+    <img src="https://cdn0.iconfinder.com/data/icons/feather/96/eye-16.png" alt="eye" />
+</button>
+</div>
+   
+     
   </div>
 
   <div class="text-right">
@@ -19,3 +29,28 @@
   <a href="/users/new">sign up</a>
 </form>
 </div>
+
+
+<script>
+    function show() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'text');
+}
+
+function hide() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'password');
+}
+
+var pwShown = 0;
+
+document.getElementById("eye").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+    } else {
+        pwShown = 0;
+        hide();
+    }
+}, false);
+</script>

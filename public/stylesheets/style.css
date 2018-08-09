@@ -183,7 +183,14 @@ animation: rainbows 2s infinite linear;animation-delay:1.85s;}
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 100px 0 600px;
+  padding: 70px 0 700px;
+}
+.background_profile{
+  background-image: url("/images/demo5.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 100px 0 500px;
 }
 .word{
   color:#F0FFFF;
@@ -211,8 +218,8 @@ animation: rainbows 2s infinite linear;animation-delay:1.85s;}
   text-align: center;
 }
 .font-style{
-  font-family: 'Times New Roman', Times, serif;
-  font-size:20px;
+  font: italic 2em Georgia, serif;
+  font-size:18px;
   text-decoration: none;
   padding-top: 20px;
   text-align: center;
@@ -385,7 +392,7 @@ a:link {
 
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     margin-left: -200px;
     margin-top: -200px;
     
@@ -398,6 +405,27 @@ a:link {
     text-align: center;  
    
 }
+#login_frame_one
+{
+  width: 400px;
+  height: atuo;
+  padding: 13px;  
+
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  margin-left: -200px;
+  margin-top: -200px;
+  
+
+  background-color: rgba(240, 255, 255, 0.5);
+
+  opacity: 1;
+
+  border-radius: 10px;
+  text-align: center;  
+ 
+}
 
 /*-----------------------------------------------------*/
 
@@ -407,7 +435,22 @@ h1{font:2.75em/100px '微软雅黑',serif;font-weight:400;letter-spacing:0.3em;
 
 h2{font:1.2em/60px '微软雅黑',serif;font-weight:400;letter-spacing:0.2em;
   text-shadow:0 0 25px rgba(254,254,255,0.85);text-transform:lowercase;}
-
+.text{
+  color:white;
+  font-size:60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.text_small{
+  color:white;
+  font-size:30px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+}
 .text1{
   color:white;
   font-size:60px;
@@ -417,6 +460,7 @@ h2{font:1.2em/60px '微软雅黑',serif;font-weight:400;letter-spacing:0.2em;
   position: relative;
   animation:  text 3s 1;
 }
+
 .text2{
   font-size: 30px;
 }
@@ -450,7 +494,8 @@ h2{font:1.2em/60px '微软雅黑',serif;font-weight:400;letter-spacing:0.2em;
   font-size:16px;
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 1px;
-  border-radius: 5px;
+  border-radius: 3px;
+  padding:5px 10px;
 }
 .left_reply{
   font-size:12px;
@@ -470,16 +515,18 @@ h2{font:1.2em/60px '微软雅黑',serif;font-weight:400;letter-spacing:0.2em;
   background-color: rgba(238, 239, 241, 0.945);
   line-height: 20px;
   font-size: 14px;
+  left:20px;
+  top:-10px;
 }
 .u-tri:before{
   position: absolute;
   left: -24px;
-  top: 4px;
+  top: 5px;
   content: '';
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-left: 12px solid transparent;
-  border-right: 12px solid lightgray;
+  border-right: 12px solid rgba(238, 239, 241, 0.945);
 } 
 .button {
   background-color: #008CBA; /* Green */
@@ -539,7 +586,7 @@ header{
 	}
 
 .over{
-  height :200px;
+  height :150px;
   overflow: auto;
 }
 a:hover{
@@ -560,14 +607,19 @@ a:hover{
   .background_one{
     padding: 0 0 100px;
   }
- 
+  .background_star_index{
+    padding:100px 0 650px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
   .background_one{
     padding: 0 0 200px;
   }
   .background{
-    padding: 100px 0 700px;
+    padding: 100px 0 600px;
+  }
+  .background_star_index{
+    padding:100px 0 650px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1999px)
@@ -576,7 +628,13 @@ a:hover{
     padding: 0 0 300px;
   }
   .background{
-    padding: 100px 0 800px;
+    padding: 100px 0 700px;
+  }
+  .background_star_index{
+    padding:100px 0 800px;
+  }
+  .background_profile{
+    padding: 70px 0 700px;
   }
 }
 
@@ -586,6 +644,8 @@ a:hover{
 } */
 .ul_no{
   list-style-type: none;
+  padding-left:550px;
+  
 }
 .index_style{
   font-family: 'Times New Roman', Times, serif;
@@ -670,29 +730,24 @@ a:hover{
 
   /*----------------------------------------*/
   .button {
-    background: #768d87;
-    background-image: -webkit-linear-gradient(top, #768d87, #6c7c7c);
-    background-image: -moz-linear-gradient(top, #768d87, #6c7c7c);
-    background-image: -ms-linear-gradient(top, #768d87, #6c7c7c);
-    background-image: -o-linear-gradient(top, #768d87, #6c7c7c);
-    background-image: linear-gradient(to bottom, #768d87, #6c7c7c);
-    -webkit-border-radius: 5;
-    -moz-border-radius: 5;
-    border-radius: 5px;
-    text-shadow: 0px -1px 0px #2b665e;
-    -webkit-box-shadow: inset 0px 1px 3px 0px #91b8b3;
-    -moz-box-shadow: inset 0px 1px 3px 0px #91b8b3;
-    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    -webkit-border-radius: 14;
+    -moz-border-radius: 14;
+    border-radius: 14px;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+    box-shadow: 0px 10px 14px -7px #276873;
     font-family: Arial;
-    color: #ffffff;
+    color: white;
     font-size: 16px;
+    background: #01090f;
     padding: 12px 30px 12px 30px;
-    border: solid #566963 1px;
+    border: solid #4e6096 1px;
     text-decoration: none;
+  
   }
   
   .button:hover {
-    color: #ffffff;
-    background: #6c7c7c;
+    color: #130101;
+    background: #f4f5f6;
     text-decoration: none;
   }

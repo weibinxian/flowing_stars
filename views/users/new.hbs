@@ -2,7 +2,7 @@
 
 <div class="background_star_index" >
   <div class="page-wrapper">
-<form  id="login_frame"action="/users" method="post">
+<form  id="login_frame_one" action="/users" method="post">
 
 <i style="padding-bottom:10px"class="fas fa-star fa-2x ">Sign Up</i>
 
@@ -14,7 +14,7 @@
     <!-- New code below: -->
     <div class="form-group">
       <label for="user-password">Password</label>
-      <input type="password" name="password" class="form-control" id="user-password" placeholder="Password">
+      <input type="password" id ="pwd "name="password" class="form-control" id="user-password" placeholder="Password">
     </div>
 
     <div class="text-right">
@@ -22,5 +22,27 @@
     </div>
   </form>
   </div>
-  
+  {{!-- <script>
+     window.onload = function() {
+            var input = document.getElementById('pwd'),
+                btn = document.getElementById('btns'),
+                btns = btn.getElementsByTagName('a');
+
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].onclick = function() {
+                    for (var j = 0; j < btns.length; j++) {
+                        btns[j].className = '';
+                    }
+                    this.className = 'cur';
+
+                    if (this.innerHTML == '隐藏') {
+                        input.setAttribute('type', 'password');
+                    } else {
+                        input.setAttribute('type', 'text');
+                    }
+                }
+            }
+        }
+          
+  </script> --}}
 </div>

@@ -25,8 +25,7 @@ router.get('/', (req, res, next) => {
       console.error(err);
     } else {
       const number = Math.floor(Math.random() * stars.length)
-
-
+     
 
       res.redirect('/stars/'+stars[number]._id)
   
