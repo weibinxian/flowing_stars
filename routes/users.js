@@ -17,7 +17,7 @@ router.get('/', auth.requireLogin, (req, res, next) => {
 
 // Users new
 router.get('/new', (req, res, next) => {
-  res.render('users/new');
+  res.render('users/new', { err: req.query.err});
 })
 
 // Users create
@@ -25,7 +25,7 @@ router.post('/', (req, res, next) => {
   const user = new User(req.body);
 
   user.save(function(err, user) {
-    if(err) console.log(err);
+    if(err) return res.redirect(`/users/new?err=${err}`)
     return res.redirect('/');
   });
 })

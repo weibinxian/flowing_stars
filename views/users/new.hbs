@@ -1,6 +1,12 @@
 
 
 <div class="background_star_index" >
+  <div>
+     {{#if err}}
+    <h2 class="text_small" style="text-align:center">This account already exist</h2>
+  {{/if}}
+  </div>
+  
   <div class="page-wrapper">
 <form  id="login_frame_one" action="/users" method="post">
 

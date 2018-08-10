@@ -2,6 +2,9 @@
 /* form {
   max-width: 20em;
 }  */
+#rainbow{
+  height: 0;
+}
  .square{
   width: 280px;
   border:1px solid lightgray;
@@ -45,6 +48,7 @@
 .square_newshow {
   transform: scale(1);
   border:1px solid lightgray;
+  padding:20px ;
   background-color: rgba(240, 255, 255, 0.6);
   /* animation:  example .4s ease-in; */
   transform-origin: center top;
@@ -52,14 +56,14 @@
 
 @-webkit-keyframes example {
   from{ 
-    opacity: .5;
+    /* opacity: .5; */
    
     transform: scale3d(.5, .5 , 1);
     /* background-color: rgba(240, 255, 255, 0.5); */
       /* -webkit-transform: rotate(0deg);  */
   }
   to{ 
-      opacity: 1;
+      /* opacity: 1; */
       
       transform: scale3d(1, 1 , 1);
       /* -webkit-transform: rotate(360deg); */
@@ -165,7 +169,7 @@ animation: rainbows 2s infinite linear;animation-delay:1.85s;}
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 0 0 100px;
+  padding: 100px 0 200px;
 
  
 }
@@ -183,7 +187,7 @@ animation: rainbows 2s infinite linear;animation-delay:1.85s;}
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 70px 0 700px;
+  padding: 70px 0 600px;
 }
 .background_profile{
   background-image: url("/images/demo5.jpg");
@@ -436,6 +440,7 @@ h1{font:2.75em/100px '微软雅黑',serif;font-weight:400;letter-spacing:0.3em;
 h2{font:1.2em/60px '微软雅黑',serif;font-weight:400;letter-spacing:0.2em;
   text-shadow:0 0 25px rgba(254,254,255,0.85);text-transform:lowercase;}
 .text{
+  font-family:Lucida Family;
   color:white;
   font-size:60px;
   font-weight: 700;
@@ -444,12 +449,14 @@ h2{font:1.2em/60px '微软雅黑',serif;font-weight:400;letter-spacing:0.2em;
   position: relative;
 }
 .text_small{
+  font-family:Lucida Family;
   color:white;
   font-size:30px;
   font-weight: 700;
   letter-spacing: 8px;
   margin-bottom: 20px;
   position: relative;
+  letter-spacing: 2px;
 }
 .text1{
   color:white;
@@ -498,7 +505,7 @@ h2{font:1.2em/60px '微软雅黑',serif;font-weight:400;letter-spacing:0.2em;
   padding:5px 10px;
 }
 .left_reply{
-  font-size:12px;
+  font-size:20px;
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 1px;
   text-align: left;
@@ -605,7 +612,7 @@ a:hover{
 @media only screen and (min-width: 320px) and (max-width: 479px)
 {
   .background_one{
-    padding: 0 0 100px;
+    padding: 100px 0 200px;
   }
   .background_star_index{
     padding:100px 0 650px;
@@ -613,7 +620,7 @@ a:hover{
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
   .background_one{
-    padding: 0 0 200px;
+    padding: 100px 0 200px;
   }
   .background{
     padding: 100px 0 600px;
@@ -621,11 +628,14 @@ a:hover{
   .background_star_index{
     padding:100px 0 650px;
   }
+  .background_profile{
+    padding: 70px 0 600px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1999px)
 {
   .background_one{
-    padding: 0 0 300px;
+    padding: 100px 0 300px;
   }
   .background{
     padding: 100px 0 700px;
@@ -634,7 +644,7 @@ a:hover{
     padding:100px 0 800px;
   }
   .background_profile{
-    padding: 70px 0 700px;
+    padding: 70px 0 800px;
   }
 }
 
@@ -644,7 +654,8 @@ a:hover{
 } */
 .ul_no{
   list-style-type: none;
-  padding-left:550px;
+  left:40%;
+  position: absolute;
   
 }
 .index_style{
